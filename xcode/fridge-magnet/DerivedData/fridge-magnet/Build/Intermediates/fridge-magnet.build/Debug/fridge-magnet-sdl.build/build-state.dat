@@ -1,0 +1,186 @@
+Tfridge-magnet-sdl
+v6
+r1
+cCheck dependencies
+cCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o /Users/hth/git/fridge-magnet/src/framework/esShader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o /Users/hth/git/fridge-magnet/src/framework/esShapes.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o /Users/hth/git/fridge-magnet/src/framework/esTransform.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o /Users/hth/git/fridge-magnet/src/framework/esUtil.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o /Users/hth/git/fridge-magnet/src/app/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c000000005267AA49000000000000044C
+t1382525513
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005322E5ED00000000000001DE
+t1394796013
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c000000005322E5EE0000000000000ADC
+t1394796014
+s2780
+
+N/Users/hth/git/fridge-magnet/src/app/main.c
+c0000000052FBA3C700000000000012CC
+t1392223175
+s4812
+
+N/Users/hth/git/fridge-magnet/src/framework/esShader.c
+c0000000052FBA3C70000000000000F09
+t1392223175
+s3849
+
+N/Users/hth/git/fridge-magnet/src/framework/esShapes.c
+c0000000052FBA3C70000000000001E77
+t1392223175
+s7799
+
+N/Users/hth/git/fridge-magnet/src/framework/esTransform.c
+c0000000052FBA3C700000000000017C5
+t1392223175
+s6085
+
+N/Users/hth/git/fridge-magnet/src/framework/esUtil.c
+c0000000052FBA3C70000000000003323
+t1392223175
+s13091
+
+N/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o
+t2
+s0
+
+N/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o
+t2
+s0
+
+N/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o
+t2
+s0
+
+N/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o
+t2
+s0
+
+N/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+CBuild AST from /Users/hth/git/fridge-magnet/src/app/main.c
+r0
+
+CBuild AST from /Users/hth/git/fridge-magnet/src/framework/esShader.c
+r0
+
+CBuild AST from /Users/hth/git/fridge-magnet/src/framework/esShapes.c
+r0
+
+CBuild AST from /Users/hth/git/fridge-magnet/src/framework/esTransform.c
+r0
+
+CBuild AST from /Users/hth/git/fridge-magnet/src/framework/esUtil.c
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7e736381ec41b941^3c2d6781ec41b941^---0#1#1#--18"Check dependencies36"11DFF389-0AE3-4E5C-AF9D-EBDB54BA0BBA-
+
+CCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o /Users/hth/git/fridge-magnet/src/framework/esShader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s423750785.403556
+e423750785.779485
+r0
+xCompileC
+xDerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o
+x/Users/hth/git/fridge-magnet/src/framework/esShader.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/hth/git/fridge-magnet/src/framework/esShader.c:19:
+o../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found
+o#include <GLES2/gl2.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/hth/git/fridge-magnet/src/framework/esShader.c251"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o /Users/hth/git/fridge-magnet/src/framework/esShader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler7f6b6781ec41b941^8997c781ec41b941^-211"In file included from /Users/hth/git/fridge-magnet/src/framework/esShader.c:19:../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found#include <GLES2/gl2.h>         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@60"file:///Users/hth/git/fridge-magnet/src/framework/esShader.c0000000000000000^3481"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o /Users/hth/git/fridge-magnet/src/framework/esShader.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hth/git/fridge-magnet/xcode/fridge-magnet    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-generated-files.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-own-target-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-all-target-headers.hmap -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-project-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I../../src/framework -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources/x86_64 -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources -F/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug -MMD -MT dependencies -MF /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.d --serialize-diagnostics /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.dia -c /Users/hth/git/fridge-magnet/src/framework/esShader.c -o /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShader.o36"BE2F3405-F883-44E9-A6C5-E425920118E0-
+b590FCE44-FDE3-4B90-B763-8FBC5F7970D4
+
+CCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o /Users/hth/git/fridge-magnet/src/framework/esShapes.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s423750785.403739
+e423750785.779545
+r0
+xCompileC
+xDerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o
+x/Users/hth/git/fridge-magnet/src/framework/esShapes.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/hth/git/fridge-magnet/src/framework/esShapes.c:19:
+o../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found
+o#include <GLES2/gl2.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/hth/git/fridge-magnet/src/framework/esShapes.c251"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o /Users/hth/git/fridge-magnet/src/framework/esShapes.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler2b6b6781ec41b941^569fc781ec41b941^-211"In file included from /Users/hth/git/fridge-magnet/src/framework/esShapes.c:19:../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found#include <GLES2/gl2.h>         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@60"file:///Users/hth/git/fridge-magnet/src/framework/esShapes.c0000000000000000^3481"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o /Users/hth/git/fridge-magnet/src/framework/esShapes.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hth/git/fridge-magnet/xcode/fridge-magnet    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-generated-files.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-own-target-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-all-target-headers.hmap -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-project-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I../../src/framework -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources/x86_64 -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources -F/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug -MMD -MT dependencies -MF /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.d --serialize-diagnostics /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.dia -c /Users/hth/git/fridge-magnet/src/framework/esShapes.c -o /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esShapes.o36"FFB03C61-0322-44D4-807C-19434CDCA207-
+b590FCE44-FDE3-4B90-B763-8FBC5F7970D4
+
+CCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o /Users/hth/git/fridge-magnet/src/framework/esTransform.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s423750785.403973
+e423750785.779469
+r0
+xCompileC
+xDerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o
+x/Users/hth/git/fridge-magnet/src/framework/esTransform.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/hth/git/fridge-magnet/src/framework/esTransform.c:21:
+o../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found
+o#include <GLES2/gl2.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/hth/git/fridge-magnet/src/framework/esTransform.c257"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o /Users/hth/git/fridge-magnet/src/framework/esTransform.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler787c6781ec41b941^d994c781ec41b941^-214"In file included from /Users/hth/git/fridge-magnet/src/framework/esTransform.c:21:../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found#include <GLES2/gl2.h>         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@63"file:///Users/hth/git/fridge-magnet/src/framework/esTransform.c0000000000000000^3499"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o /Users/hth/git/fridge-magnet/src/framework/esTransform.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hth/git/fridge-magnet/xcode/fridge-magnet    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-generated-files.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-own-target-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-all-target-headers.hmap -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-project-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I../../src/framework -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources/x86_64 -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources -F/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug -MMD -MT dependencies -MF /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.d --serialize-diagnostics /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.dia -c /Users/hth/git/fridge-magnet/src/framework/esTransform.c -o /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esTransform.o36"137C985A-22CA-46F9-AC7D-8FE86A1DFD28-
+b590FCE44-FDE3-4B90-B763-8FBC5F7970D4
+
+CCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o /Users/hth/git/fridge-magnet/src/framework/esUtil.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s423750785.404345
+e423750785.678314
+r0
+xCompileC
+xDerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o
+x/Users/hth/git/fridge-magnet/src/framework/esUtil.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/hth/git/fridge-magnet/src/framework/esUtil.c:26:10: fatal error: 'GLES2/gl2.h' file not found
+o#include <GLES2/gl2.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/hth/git/fridge-magnet/src/framework/esUtil.c247"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o /Users/hth/git/fridge-magnet/src/framework/esUtil.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler8a936781ec41b941^f0a4ad81ec41b941^-154"/Users/hth/git/fridge-magnet/src/framework/esUtil.c:26:10: fatal error: 'GLES2/gl2.h' file not found#include <GLES2/gl2.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@28"'GLES2/gl2.h' file not found-423750785#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@58"file:///Users/hth/git/fridge-magnet/src/framework/esUtil.c0000000000000000^25#9#25#9#648#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@58"file:///Users/hth/git/fridge-magnet/src/framework/esUtil.c0000000000000000^3469"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o /Users/hth/git/fridge-magnet/src/framework/esUtil.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hth/git/fridge-magnet/xcode/fridge-magnet    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-generated-files.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-own-target-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-all-target-headers.hmap -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-project-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I../../src/framework -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources/x86_64 -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources -F/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug -MMD -MT dependencies -MF /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.d --serialize-diagnostics /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.dia -c /Users/hth/git/fridge-magnet/src/framework/esUtil.c -o /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/esUtil.o36"6DEE855A-2B6C-474F-8DDA-318646A231EE-
+b590FCE44-FDE3-4B90-B763-8FBC5F7970D4
+
+CCompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o /Users/hth/git/fridge-magnet/src/app/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s423750785.404630
+e423750785.779468
+r0
+xCompileC
+xDerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o
+x/Users/hth/git/fridge-magnet/src/app/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/hth/git/fridge-magnet/src/app/main.c:18:
+o/Users/hth/git/fridge-magnet/xcode/fridge-magnet/fridge-magnet-sdl/../../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found
+o#include <GLES2/gl2.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /Users/hth/git/fridge-magnet/src/app/main.c237"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o /Users/hth/git/fridge-magnet/src/app/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler66a36781ec41b941^029bc781ec41b941^-271"In file included from /Users/hth/git/fridge-magnet/src/app/main.c:18:/Users/hth/git/fridge-magnet/xcode/fridge-magnet/fridge-magnet-sdl/../../../src/framework/esUtil.h:23:10: fatal error: 'GLES2/gl2.h' file not found#include <GLES2/gl2.h>         ^1 error generated.-0#0#1#-19%DVTDocumentLocation2@50"file:///Users/hth/git/fridge-magnet/src/app/main.c0000000000000000^3445"CompileC DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o /Users/hth/git/fridge-magnet/src/app/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/hth/git/fridge-magnet/xcode/fridge-magnet    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-generated-files.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-own-target-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-all-target-headers.hmap -iquote /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/fridge-magnet-sdl-project-headers.hmap -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I../../src/framework -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources/x86_64 -I/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/DerivedSources -F/Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug -MMD -MT dependencies -MF /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.dia -c /Users/hth/git/fridge-magnet/src/app/main.c -o /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Intermediates/fridge-magnet.build/Debug/fridge-magnet-sdl.build/Objects-normal/x86_64/main.o36"70A59DBB-945E-43A1-8E64-2E7EFE66BA88-
+b590FCE44-FDE3-4B90-B763-8FBC5F7970D4
+
+CLd /Users/hth/git/fridge-magnet/xcode/fridge-magnet/DerivedData/fridge-magnet/Build/Products/Debug/fridge-magnet-sdl normal x86_64
+r0
+

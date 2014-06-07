@@ -1,0 +1,63 @@
+
+#include "gfx.h"
+
+#include "gl.h"
+#include "../gl_internal.h"
+
+#include "SDL2/SDL.h"
+
+SDL_Window * g_gfx_window;
+SDL_GLContext * g_gfx_gl_context;
+
+void gfx_createWindow(int width, int height) {
+    SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER);
+
+    SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+    
+    g_gfx_window = SDL_CreateWindow("fridge-magnet", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
+    
+    g_gfx_gl_context = SDL_GL_CreateContext(g_gfx_window);
+    
+    SDL_GL_SetSwapInterval(1);
+    
+    
+    gl_setup(width, height);
+    
+}
+
+void gfx_dispose() {
+    SDL_GL_DeleteContext(g_gfx_gl_context);
+    g_gfx_gl_context = NULL;
+    
+    SDL_DestroyWindow(g_gfx_window);
+    g_gfx_window = NULL;
+    
+    SDL_Quit();
+}
+
+
+void gfx_loop(int target_frame_rate, void (*render_func)(unsigned int)) {
+    SDL_Event e;
+    int b_end = 0;
+    
+    Uint32 last_render_t = SDL_GetTicks();
+    
+    while(!b_end) {
+        while (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
+                b_end = 1;
+            }
+        }
+        
+        Uint32 current_time = SDL_GetTicks();
+        if ((current_time - last_render_t) * target_frame_rate >= 1000) {
+            render_func(current_time - last_render_t);
+            SDL_GL_SwapWindow(g_gfx_window);
+            last_render_t = current_time;
+        }
+        
+        
+    }
+
+}
