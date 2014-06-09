@@ -2,6 +2,7 @@
 #include "gfx.h"
 
 #include "gl.h"
+#include "time.h"
 #include "../gl_internal.h"
 
 #include "SDL2/SDL.h"
@@ -36,28 +37,15 @@ void gfx_dispose() {
     SDL_Quit();
 }
 
+void gfx_swapBuffers() {
+    SDL_GL_SwapWindow(g_gfx_window);
+}
 
-void gfx_loop(int target_frame_rate, void (*render_func)(unsigned int)) {
+void gfx_handleWindowEvents(int * b_end) {
     SDL_Event e;
-    int b_end = 0;
-    
-    Uint32 last_render_t = SDL_GetTicks();
-    
-    while(!b_end) {
-        while (SDL_PollEvent(&e)) {
-            if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                b_end = 1;
-            }
+    while (SDL_PollEvent(&e)) {
+        if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
+            *b_end = 1;
         }
-        
-        Uint32 current_time = SDL_GetTicks();
-        if ((current_time - last_render_t) * target_frame_rate >= 1000) {
-            render_func(current_time - last_render_t);
-            SDL_GL_SwapWindow(g_gfx_window);
-            last_render_t = current_time;
-        }
-        
-        
     }
-
 }

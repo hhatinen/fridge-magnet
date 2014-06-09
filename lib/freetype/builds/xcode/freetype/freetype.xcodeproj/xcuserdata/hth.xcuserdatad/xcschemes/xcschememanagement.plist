@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>fridge-magnet-sdl.xcscheme</key>
+		<key>freetype.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9DAD483A1941E5AF00E5A08F</key>
+		<key>79BB23F21944D870007F8790</key>
 		<dict>
 			<key>primary</key>
 			<true/>
