@@ -11,6 +11,7 @@
 		790EB8CA1943070B00752D4B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 790EB8C91943070B00752D4B /* main.c */; };
 		790EB8CF19430BEC00752D4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790EB8CE19430BEC00752D4B /* Cocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		790EB8D119430C0500752D4B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790EB8D019430C0500752D4B /* SDL2.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		791B9EEA194E14FF00ED5A18 /* libpng15.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791B9EE9194E14FE00ED5A18 /* libpng15.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		79BB23E519436014007F8790 /* time_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB23E419436014007F8790 /* time_sdl.c */; };
 		79BB23E919444E1B007F8790 /* gfx.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB23E819444E1B007F8790 /* gfx.c */; };
 		79F3F5DF194318E100010B7E /* gfx_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 79F3F5DE194318E100010B7E /* gfx_sdl.c */; };
@@ -46,6 +47,7 @@
 		790EB8C91943070B00752D4B /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../src/app/main.c; sourceTree = "<group>"; };
 		790EB8CE19430BEC00752D4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		790EB8D019430C0500752D4B /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../lib/SDL2.framework; sourceTree = "<group>"; };
+		791B9EE9194E14FE00ED5A18 /* libpng15.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng15.framework; path = ../../../../../../Library/Frameworks/libpng15.framework; sourceTree = "<group>"; };
 		79BB23E219435FE2007F8790 /* time_raspi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = time_raspi.c; path = ../../src/framework/src/raspi/time_raspi.c; sourceTree = "<group>"; };
 		79BB23E419436014007F8790 /* time_sdl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = time_sdl.c; path = ../../src/framework/src/sdl/time_sdl.c; sourceTree = "<group>"; };
 		79BB23E619436049007F8790 /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = time.h; path = ../../src/framework/include/time.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791B9EEA194E14FF00ED5A18 /* libpng15.framework in Frameworks */,
 				790699C71945A6F30025BB3B /* libfreetype.a in Frameworks */,
 				790EB8D119430C0500752D4B /* SDL2.framework in Frameworks */,
 				790EB8CF19430BEC00752D4B /* Cocoa.framework in Frameworks */,
@@ -150,6 +153,7 @@
 		9DAD48271941E36700E5A08F = {
 			isa = PBXGroup;
 			children = (
+				791B9EE9194E14FE00ED5A18 /* libpng15.framework */,
 				790699C11945A6A20025BB3B /* freetype.xcodeproj */,
 				790EB8D019430C0500752D4B /* SDL2.framework */,
 				790EB8CE19430BEC00752D4B /* Cocoa.framework */,
@@ -316,6 +320,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					../lib,
 					"/Users/hth/git/fridge-magnet/xcode/lib",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -371,6 +376,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					../lib,
 					"/Users/hth/git/fridge-magnet/xcode/lib",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;

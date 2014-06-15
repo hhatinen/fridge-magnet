@@ -11,6 +11,8 @@
 extern void exit OF((int));
 #endif
 
+void z_error() {}
+int z_verbose = 0;
 
 #ifndef HAVE_MEMCPY
 

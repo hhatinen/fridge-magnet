@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7928869519462DBB0039BDBF /* ftgzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7928869419462DBB0039BDBF /* ftgzip.c */; };
+		7928869B19462F680039BDBF /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7928869A19462F680039BDBF /* libz.a */; };
+		7928869D194630AB0039BDBF /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 7928869C194630AB0039BDBF /* zutil.c */; };
 		79BB24081944D91F007F8790 /* ftbase.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB24021944D91F007F8790 /* ftbase.c */; };
 		79BB24091944D91F007F8790 /* ftbbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB24031944D91F007F8790 /* ftbbox.c */; };
 		79BB240A1944D91F007F8790 /* ftdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB24041944D91F007F8790 /* ftdebug.c */; };
@@ -52,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7928869419462DBB0039BDBF /* ftgzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ftgzip.c; path = ../../../src/gzip/ftgzip.c; sourceTree = "<group>"; };
+		7928869A19462F680039BDBF /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../../../../libz.a; sourceTree = "<group>"; };
+		7928869C194630AB0039BDBF /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ../../../src/gzip/zutil.c; sourceTree = "<group>"; };
 		79BB23F31944D870007F8790 /* libfreetype.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfreetype.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BB24021944D91F007F8790 /* ftbase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ftbase.c; path = ../../../src/base/ftbase.c; sourceTree = "<group>"; };
 		79BB24031944D91F007F8790 /* ftbbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ftbbox.c; path = ../../../src/base/ftbbox.c; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7928869B19462F680039BDBF /* libz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +118,7 @@
 		79BB23EA1944D870007F8790 = {
 			isa = PBXGroup;
 			children = (
+				7928869A19462F680039BDBF /* libz.a */,
 				79BB24001944D8AF007F8790 /* src */,
 				79BB23F41944D870007F8790 /* Products */,
 			);
@@ -201,6 +209,8 @@
 		79BB243C1944DC0C007F8790 /* aux */ = {
 			isa = PBXGroup;
 			children = (
+				7928869C194630AB0039BDBF /* zutil.c */,
+				7928869419462DBB0039BDBF /* ftgzip.c */,
 				79D1F9F31945E113009F8F69 /* ftlzw.c */,
 				79BB24F91944DCA2007F8790 /* psnames.c */,
 				79BB24F71944DC94007F8790 /* pshinter.c */,
@@ -286,9 +296,11 @@
 				79BB24331944DA37007F8790 /* truetype.c in Sources */,
 				79BB24381944DA73007F8790 /* raster.c in Sources */,
 				79BB24F61944DC7C007F8790 /* psaux.c in Sources */,
+				7928869D194630AB0039BDBF /* zutil.c in Sources */,
 				79BB24FA1944DCA2007F8790 /* psnames.c in Sources */,
 				79BB24261944D98E007F8790 /* ftmm.c in Sources */,
 				79BB24351944DA4D007F8790 /* cff.c in Sources */,
+				7928869519462DBB0039BDBF /* ftgzip.c in Sources */,
 				79BB24091944D91F007F8790 /* ftbbox.c in Sources */,
 				79D1F9F41945E113009F8F69 /* ftlzw.c in Sources */,
 				79BB24291944D98E007F8790 /* ftpfr.c in Sources */,
@@ -406,6 +418,10 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../../../include,
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hth/git/fridge-magnet/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -419,6 +435,10 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../../../include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hth/git/fridge-magnet/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
