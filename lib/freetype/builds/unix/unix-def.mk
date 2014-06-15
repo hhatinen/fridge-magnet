@@ -28,7 +28,7 @@ OBJ_BUILD ?= $(BUILD_DIR)
 #
 FTSYS_SRC = $(BUILD_DIR)/ftsystem.c
 
-INSTALL         := /opt/local/bin/ginstall -c
+INSTALL         := /usr/bin/install -c
 INSTALL_DATA    := ${INSTALL} -m 644
 INSTALL_PROGRAM := ${INSTALL}
 INSTALL_SCRIPT  := ${INSTALL}
@@ -62,10 +62,10 @@ version_info := 17:2:11
 
 # Variables needed for `freetype-config' and `freetype.pc'.
 #
-REQUIRES_PRIVATE   := zlib, libpng
-LIBS_PRIVATE       := -lbz2
-LIBS_CONFIG        := -lfreetype -L/opt/local/lib -lz -lbz2 -L/opt/local/lib -lpng16
-LIBSSTATIC_CONFIG  := -lfreetype -L/opt/local/lib -lz -lbz2 -L/opt/local/lib -lpng16 -lz
+REQUIRES_PRIVATE   := 
+LIBS_PRIVATE       := -lz -lbz2
+LIBS_CONFIG        := -lfreetype -lz -lbz2
+LIBSSTATIC_CONFIG  := -lfreetype -lz -lbz2
 build_libtool_libs := 
 ft_version         := 17.2.11
 

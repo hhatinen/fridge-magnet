@@ -79,11 +79,11 @@ T := -o$(space)
 #   We use our own FreeType configuration file.
 #
 CPPFLAGS := 
-CFLAGS   := -c -Wall -g -O2 -DDARWIN_NO_CARBON -I/opt/local/include  -DFT_CONFIG_OPTION_SYSTEM_ZLIB  -DFT_CONFIG_OPTION_USE_BZIP2 -I/opt/local/include/libpng16  -DFT_CONFIG_OPTION_USE_PNG -DFT_CONFIG_CONFIG_H="<ftconfig.h>"
+CFLAGS   := -c -Wall -g -O2  -DFT_CONFIG_OPTION_SYSTEM_ZLIB  -DFT_CONFIG_OPTION_USE_BZIP2 -DFT_CONFIG_CONFIG_H="<ftconfig.h>"
 
 # ANSIFLAGS: Put there the flags used to make your compiler ANSI-compliant.
 #
-ANSIFLAGS :=  -ansi
+ANSIFLAGS :=  -pedantic -ansi
 
 # C compiler to use -- we use libtool!
 #
@@ -93,7 +93,7 @@ CC    := $(LIBTOOL) --mode=compile $(CCraw)
 
 # Linker flags.
 #
-LDFLAGS :=  -L/opt/local/lib -lz  -lbz2 -L/opt/local/lib -lpng16 
+LDFLAGS :=  -lz -lbz2
 
 
 # export symbols
