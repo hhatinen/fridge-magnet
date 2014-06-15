@@ -16,7 +16,7 @@ output:
 	@echo $(SRCS)
 
 fridge-magnet: $(OBJS)
-	$(CC) -o $@ $(patsubst %.c, obj/%.o, $(notdir $($^))) $(CFLAGS) $(LIBS)
+	$(CC) -o $@ $(patsubst %.c, obj/%.o, $(notdir $^)) $(CFLAGS) $(LIBS)
 
 $(OBJS): %.o: %.c
 	$(CC) $< -c -o obj/$(notdir $@) $(CFLAGS)
