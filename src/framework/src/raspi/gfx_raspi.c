@@ -18,7 +18,7 @@ typedef struct _escontext {
 
 ESContext g_gfx_context;
 
-EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(ESContext * out_context);
+EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(int width, int height);
 EGLBoolean p_gfx_createEGLContext ( EGLNativeWindowType hWnd, EGLDisplay* eglDisplay, EGLContext* eglContext, EGLSurface* eglSurface, EGLint attribList[]);
 
 void gfx_createWindow(int width, int height) {
