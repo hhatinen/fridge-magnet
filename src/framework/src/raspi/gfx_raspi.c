@@ -51,6 +51,9 @@ void gfx_createWindow(int width, int height) {
     return;// 1;
 }
 
+void gfx_dispose() {
+}
+
 void gfx_swapBuffers() {
     eglSwapBuffers(g_gfx_context.eglDisplay, g_gfx_context.eglSurface);
 }
