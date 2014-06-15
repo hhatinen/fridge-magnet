@@ -21,7 +21,7 @@ ESContext g_gfx_context;
 EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(ESContext * out_context);
 EGLBoolean p_gfx_createEGLContext ( EGLNativeWindowType hWnd, EGLDisplay* eglDisplay, EGLContext* eglContext, EGLSurface* eglSurface, EGLint attribList[]);
 
-int gfx_createWindow(int width, int height) {
+void gfx_createWindow(int width, int height) {
     int success;
     
     bcm_host_init();
@@ -30,7 +30,7 @@ int gfx_createWindow(int width, int height) {
     int display_height;
     success = graphics_get_display_size(0, &display_width, &display_height);
     if (!success) {
-        return 0;
+        return;// 0;
     }
     
     // Just override supplied values...
@@ -41,14 +41,14 @@ int gfx_createWindow(int width, int height) {
     g_gfx_context.height = height;
     g_gfx_context.hWnd = p_gfx_createWindow(g_gfx_context.width, g_gfx_context.height);
     if (!context.hWnd) {
-        return 0;
+        return;// 0;
     }
     
     if (!p_gfx_createEGLContext(g_gfx_context.hWnd, &g_gfx_context.eglDisplay, &g_gfx_context.eglContext, &g_gfx_context.eglSurface)) {
-        return 0;
+        return;// 0;
     }
     
-    return 1;
+    return;// 1;
 }
 
 void gfx_swapBuffers() {

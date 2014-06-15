@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef GL
+#ifdef FM_GL
     #ifdef __APPLE__
         #include <OpenGL/glu.h>
         #include <OpenGL/glext.h>
@@ -11,7 +11,9 @@
         #include <GL/glxext.h>
         #define glXGetProcAddress(x) (*glXGetProcAddressARB)((const GLubyte*)x)
     #endif
-#elif EGL
+#elif FM_EGL
+    #include <sys/time.h>
+
     #include <GLES2/gl2.h>
     #include <EGL/egl.h>
 #else
