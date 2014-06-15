@@ -40,7 +40,7 @@ int gfx_createWindow(int width, int height) {
     g_gfx_context.width = width;
     g_gfx_context.height = height;
     g_gfx_context.hWnd = p_gfx_createWindow(g_gfx_context.width, g_gfx_context.height);
-    if (!context.hWnd) {
+    if (!g_gfx_context.hWnd) {
         return 0;
     }
     
