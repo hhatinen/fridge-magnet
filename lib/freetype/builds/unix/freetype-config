@@ -142,8 +142,8 @@ if test "$echo_cflags" = "yes" ; then
 fi
 
 if test "$echo_libs" = "yes" ; then
-  libs="-lfreetype -L/opt/local/lib -lz -lbz2 -L/opt/local/lib -lpng16"
-  staticlibs="-lfreetype -L/opt/local/lib -lz -lbz2 -L/opt/local/lib -lpng16 -lz"
+  libs="-lfreetype -lz -lbz2"
+  staticlibs="-lfreetype -lz -lbz2"
   if test "$show_static" = "yes" ; then
     libs="$staticlibs"
   fi

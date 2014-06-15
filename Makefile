@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS =-DEGL -Ilib/freetype/include -Isrc/framework/include
+CFLAGS =-DEGL -Ilib/freetype/include -Isrc/framework/include -I$(SDKSTAGE)/opt/vc/include -I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads -I$(SDKSTAGE)/opt/vc/include/interface/vmcs_host/linux
 
 _SRCS_FRAMEWORK=gfx.c gl.c raspi/gfx_raspi.c raspi/time_raspi.c
 SRCS_FRAMEWORK=$(patsubst %.c, src/framework/src/%.c, $(_SRCS_FRAMEWORK))
