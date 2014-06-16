@@ -17,6 +17,7 @@
     #include <GLES2/gl2.h>
     #include <EGL/egl.h>
 #else
-    #error You must define either GL or EGL
+    #error You must define either FM_GL or FM_EGL
 #endif
 
+GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_shader_data);

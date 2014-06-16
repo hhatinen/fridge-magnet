@@ -10,7 +10,7 @@
 SDL_Window * g_gfx_window;
 SDL_GLContext * g_gfx_gl_context;
 
-void gfx_createWindow(int width, int height) {
+int gfx_createWindow(int width, int height) {
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER);
 
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
@@ -22,9 +22,10 @@ void gfx_createWindow(int width, int height) {
     
     SDL_GL_SetSwapInterval(1);
     
-    
     gl_setup(width, height);
     
+    
+    return 0;
 }
 
 void gfx_dispose() {
