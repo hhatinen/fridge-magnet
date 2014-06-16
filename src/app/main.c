@@ -25,8 +25,9 @@ int main(int argc, char *argv[]) {
     FT_Render_Glyph(g_ft_face->glyph, FT_RENDER_MODE_NORMAL);
 */
     
-    if(!gfx_createWindow(1024, 576)) {
-	printf("fuck\n");
+    int err = 0;
+    if(err = gfx_createWindow(1440, 1024)) {
+	printf("fuck %d\n", err);
     } else {
         gfx_loop(60, render);
         gfx_dispose();

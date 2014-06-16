@@ -30,25 +30,26 @@ int gfx_createWindow(int width, int height) {
     int display_height;
     success = graphics_get_display_size(0, &display_width, &display_height);
     if (!success) {
-        return;// 0;
+        //return 1;
+    } else {
+        // Just override supplied values...
+        width = display_width;
+        height = display_height;
     }
     
-    // Just override supplied values...
-    //width = display_width;
-    //height = display_height;
     
     g_gfx_context.width = width;
     g_gfx_context.height = height;
     g_gfx_context.hWnd = p_gfx_createWindow(g_gfx_context.width, g_gfx_context.height);
     if (!g_gfx_context.hWnd) {
-        return 0;
+        return 2;
     }
     
     if (!p_gfx_createEGLContext(g_gfx_context.hWnd, &g_gfx_context.eglDisplay, &g_gfx_context.eglContext, &g_gfx_context.eglSurface)) {
-        return 0;
+        return 3;
     }
     
-    return 1;
+    return 0;
 }
 
 void gfx_dispose() {
@@ -60,6 +61,8 @@ void gfx_swapBuffers() {
 
 void gfx_handleWindowEvents(int * b_end) {
 }
+
+    EGL_DISPMANX_WINDOW_T nativewindow;
 
 EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(int width, int height) {
     VC_RECT_T dst_rect;
@@ -78,13 +81,12 @@ EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(int width, int height) {
     DISPMANX_UPDATE_HANDLE_T dispman_update;
     dispman_display = vc_dispmanx_display_open(0);
     dispman_update = vc_dispmanx_update_start(0);
-    vc_dispmanx_update_submit_sync( dispman_update );
     
     DISPMANX_ELEMENT_HANDLE_T dispman_element;
     dispman_element = vc_dispmanx_element_add(dispman_update, dispman_display, 0/*layer*/, &dst_rect, 0/*src*/, &src_rect, DISPMANX_PROTECTION_NONE, 0 /*alpha*/, 0/*clamp*/, 0/*transform*/);
+
+    vc_dispmanx_update_submit_sync( dispman_update );
     
-    
-    static EGL_DISPMANX_WINDOW_T nativewindow;
     nativewindow.element = dispman_element;
     nativewindow.width = width;
     nativewindow.height = height;
