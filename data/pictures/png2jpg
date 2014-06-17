@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FILES=*.png
+for f in $FILES
+do
+	echo "convert $f -resize 50% ${f%.png}.jpg"
+	convert $f -resize 50% ${f%.png}.jpg
+done
+
+
