@@ -1,7 +1,7 @@
 
 #include "gfx_internal.h"
 #include "gfx.h"
-#include "time.h"
+#include "fm_time.h"
 
 void gfx_loop(int target_frame_rate, void (*render_func)(unsigned int)) {
     int b_end = 0;
