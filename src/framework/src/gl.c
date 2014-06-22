@@ -5,6 +5,8 @@
 #include "gl.h"
 #include "gl_internal.h"
 
+#include "gfx_internal.h"
+
 void gl_setup(int scr_width, int scr_height) {
     glViewport(0, 0, scr_width, scr_height);
 }
@@ -13,16 +15,16 @@ GLuint gl_compileShader(GLuint type, const char * data) {
     GLuint shader;
     GLint b_compiled;
     
-    shader = glCreateShader(type);
+    shader = GL(glCreateShader(type));
    
     if (!shader) {
         return 0;
     }
     
-    glShaderSource(shader, 1, &data, NULL);
-    glCompileShader(shader);
+    GL(glShaderSource(shader, 1, &data, NULL));
+    GL(glCompileShader(shader));
 
-    glGetShaderiv(shader, GL_COMPILE_STATUS, &b_compiled);
+    GL(glGetShaderiv(shader, GL_COMPILE_STATUS, &b_compiled));
     if (!b_compiled) {
         GLint infoLen;
         glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLen);
@@ -44,10 +46,6 @@ GLuint gl_compileShader(GLuint type, const char * data) {
 GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_shader_data) {
     GLuint program;
     
-    program = glCreateProgram();
-    if (!program) {
-        return 0;
-    }
     
     GLuint vertex_shader, fragment_shader;
     
@@ -61,10 +59,17 @@ GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_s
         return 0;
     }
     
-    glAttachShader(GL_VERTEX_SHADER, vertex_shader);
-    glAttachShader(GL_FRAGMENT_SHADER, fragment_shader);
+    program = GL(glCreateProgram());
+    if (!program) {
+        return 0;
+    }
+ 
+    GL(glAttachShader(program, vertex_shader));
+    GL(glAttachShader(program, fragment_shader));
+
+    //glBindAttribLocation(program, 0, "pos");
     
-    glLinkProgram(program);
+    GL(glLinkProgram(program));
     
     GLint b_linked;
     glGetProgramiv(program, GL_LINK_STATUS, &b_linked);
@@ -85,6 +90,54 @@ GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_s
     return program;
     
 }
+
+int gl_createTexture(const image * in_image, texture * out_texture) {
+    GLuint tex;
+    
+    int W = 1;
+    int H = 1;
+    while (W < in_image->width) W <<= 1;
+    while (H < in_image->height) H <<= 1;
+    
+    image image;
+    if (W != in_image->width || H != in_image->height) {
+//        gfx_crop(in_image, W, H, &image);
+        image = *in_image;
+        W = in_image->width;
+        H = in_image->height;
+    } else {
+        image = *in_image;
+    }
+    
+    GL(glPixelStorei(GL_UNPACK_ALIGNMENT, 1));
+    GL(glGenTextures(1, &tex));
+    GL(glBindTexture(GL_TEXTURE_2D, tex));
+    GL(glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, W, H, 0, GL_RGB, GL_UNSIGNED_BYTE, image.data));
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+ 
+    out_texture->gl_handle = tex;
+    out_texture->image_width = in_image->width;
+    out_texture->image_height = in_image->height;
+    out_texture->texture_width = W;
+    out_texture->texture_height = H;
+    
+    return 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

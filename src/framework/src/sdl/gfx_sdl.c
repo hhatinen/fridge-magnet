@@ -16,6 +16,13 @@ int gfx_createWindow(int width, int height) {
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
+    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
+    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 6);
+    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
+    
+//    SDL_GL_SetAttribute(SDL_GL_CONTEXT_DEBUG_FLAG, 1);
+//    SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
+    
     g_gfx_window = SDL_CreateWindow("fridge-magnet", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
     
     g_gfx_gl_context = SDL_GL_CreateContext(g_gfx_window);
@@ -23,7 +30,8 @@ int gfx_createWindow(int width, int height) {
     SDL_GL_SetSwapInterval(1);
     
     gl_setup(width, height);
-    
+
+    printf("grr\n");
     
     return 0;
 }

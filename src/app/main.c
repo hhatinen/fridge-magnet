@@ -12,32 +12,42 @@ void render(unsigned int dt);
 const char * g_vertex_src =
     "\
     attribute vec4 p;\
+    varying vec2 v_tex;\
     void main() {\
-        gl_Position = p;\
+        v_tex = vec2(0,1) + vec2(1,-1) * vec2(p.xy) + 0.5;\
+        gl_Position = vec4(p.xyz * 2.0, 1.0);\
     }";
 
 const char * g_fragment_src =
     "\
+    uniform sampler2D txt;\
+    varying vec2 v_tex;\
     void main()	{\
-        gl_FragColor = vec4 ( 1.0, 0.0, 0.0, 1.0 );\
+        vec3 txtcol = texture2D(txt, v_tex).rgb;\
+        gl_FragColor = vec4(txtcol.rgb, 1.0);\
     }";
 
 
 FT_Library g_ft_lib;
 FT_Face g_ft_face;
 
+texture g_txt;
+
 GLuint g_shaderprogram;
 
 int main(int argc, char *argv[]) {
     
-    FT_Init_FreeType(&g_ft_lib);
-    FT_New_Face(g_ft_lib, "data/HelveticaNeue-Medium.ttf", 0, &g_ft_face);
-    FT_Set_Char_Size(g_ft_face, 0, 16*64, 1024, 576);
-    int glyph_index = FT_Get_Char_Index(g_ft_face, 'A');
-    FT_Load_Glyph(g_ft_face, glyph_index, 0);
-    FT_Render_Glyph(g_ft_face->glyph, FT_RENDER_MODE_NORMAL);
+//    FT_Init_FreeType(&g_ft_lib);
+//    FT_New_Face(g_ft_lib, "data/HelveticaNeue-Medium.ttf", 0, &g_ft_face);
+//    FT_Set_Char_Size(g_ft_face, 0, 16*64, 1024, 576);
+//    int glyph_index = FT_Get_Char_Index(g_ft_face, 'A');
+//    FT_Load_Glyph(g_ft_face, glyph_index, 0);
+//    FT_Render_Glyph(g_ft_face->glyph, FT_RENDER_MODE_NORMAL);
     
-    
+    image img;
+    //gfx_createNoiseImage(256, 256, 3, &img);
+    gfx_loadJPG("data/pictures/IMG_1909.jpg", &img);
+
 #if FM_EGL
     int w = 1440, h = 900;
 #else
@@ -52,6 +62,8 @@ int main(int argc, char *argv[]) {
         if (!g_shaderprogram) {
             return 0;
         }
+        
+        gl_createTexture(&img, &g_txt);
   
         gfx_loop(60, render);
         gfx_dispose();
@@ -66,15 +78,24 @@ void render(unsigned int dt) {
     glClearColor(0,0,0,1);
     glClear(GL_COLOR_BUFFER_BIT);
     
+    GL(glEnable(GL_TEXTURE_2D));
+    
     GLfloat verts[] = {-0.5f,-0.5f, 0.0f, 1.0f,
                        -0.5f, 0.5f, 0.0f, 1.0f,
                         0.5f,-0.5f, 0.0f, 1.0f,
                         0.5f, 0.5f, 0.0f, 1.0f };
-    glBindAttribLocation(g_shaderprogram, 0, "pos");
-    glUseProgram(g_shaderprogram);
-    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, verts);
-    glEnableVertexAttribArray ( 0 );
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    
+    
+    GL(glUseProgram(g_shaderprogram));
+    
+    GL(glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, verts));
+    GL(glEnableVertexAttribArray(0));
+    
+    GL(glActiveTexture(GL_TEXTURE0));
+    GL(glBindTexture(GL_TEXTURE_2D, g_txt.gl_handle));
+    GL(glUniform1i(glGetUniformLocation(g_shaderprogram, "txt"), 0));
+    
+    GL(glDrawArrays(GL_TRIANGLE_STRIP, 0, 4));
     
 }
 
