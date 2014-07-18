@@ -1,8 +1,8 @@
-CC=gcc
-CFLAGS =-DFM_EGL -Ilib/freetype/include -Isrc/framework/include -I$(SDKSTAGE)/opt/vc/include -I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads -I$(SDKSTAGE)/opt/vc/include/interface/vmcs_host/linux
-LFLAGS=-lfreetype -lGLESv2 -lEGL -lm -lbcm_host -L$(SDKSTAGE)/opt/vc/lib
+CC=gcc -std=c99
+CFLAGS = -w -D_POSIX_C_SOURCE=199309 -DFM_EGL -Ilib/freetype/include -Isrc/framework/include -I$(SDKSTAGE)/opt/vc/include -I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads -I$(SDKSTAGE)/opt/vc/include/interface/vmcs_host/linux
+LFLAGS=-lfreetype -lGLESv2 -lEGL -lm -lbcm_host -ljpeg -L$(SDKSTAGE)/opt/vc/lib
 
-_SRCS_FRAMEWORK=gfx.c gl.c raspi/gfx_raspi.c raspi/time_raspi.c
+_SRCS_FRAMEWORK=gfx.c gl.c jpeg.c raspi/gfx_raspi.c raspi/time_raspi.c
 SRCS_FRAMEWORK=$(patsubst %.c, src/framework/src/%.c, $(_SRCS_FRAMEWORK))
 _SRCS_APP=main.c
 SRCS_APP=$(patsubst %.c, src/app/%.c, $(_SRCS_APP))

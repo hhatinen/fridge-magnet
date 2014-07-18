@@ -3,7 +3,6 @@
 
 unsigned int time_ticks() {
     struct timeval t;
-    struct timezone tz;
-    gettimeofday(&t, &tz);
+    gettimeofday(&t, 0);
     return t.tv_sec * 1000 + t.tv_usec / 1000;
 }
