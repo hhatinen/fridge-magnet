@@ -60,7 +60,8 @@ GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_s
     }
     
     program = GL(glCreateProgram());
-    if (!program) {
+    if (!program)
+    {
         return 0;
     }
  
