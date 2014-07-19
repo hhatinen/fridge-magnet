@@ -18,10 +18,22 @@ typedef struct _escontext {
 
 ESContext g_gfx_context;
 
+int g_gfx_window_width;
+int g_gfx_window_height;
+
+int gfx_getScreenWidth() {
+    return g_gfx_window_width;
+}
+
+int gfx_getScreenHeight() {
+    return g_gfx_window_height;
+}
+
 EGL_DISPMANX_WINDOW_T * p_gfx_createWindow(int width, int height);
 EGLBoolean p_gfx_createEGLContext(EGLNativeWindowType hWnd, EGLDisplay* eglDisplay, EGLContext* eglContext, EGLSurface* eglSurface);
 
 int gfx_createWindow(int width, int height) {
+    
     int success;
     
     bcm_host_init();
@@ -36,7 +48,9 @@ int gfx_createWindow(int width, int height) {
         width = display_width;
         height = display_height;
     }
-    
+
+    g_gfx_window_width = width;
+    g_gfx_window_height = height;
     
     g_gfx_context.width = width;
     g_gfx_context.height = height;

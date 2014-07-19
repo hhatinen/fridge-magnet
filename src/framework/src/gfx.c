@@ -65,4 +65,7 @@ void gfx_createNoiseImage(int width, int height, int depth, image * out_image) {
     
 }
 
+float gfx_getScrAspect() {
+    return (float)gfx_getScreenWidth() / gfx_getScreenHeight();
+}
 

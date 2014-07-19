@@ -103,6 +103,7 @@ int gl_createTexture(const image * in_image, texture * out_texture) {
     image image;
     if (W != in_image->width || H != in_image->height) {
 //        gfx_crop(in_image, W, H, &image);
+//        printf("cropping %dx%d->%dx%d\n", in_image->width, in_image->height, W, H);
         image = *in_image;
         W = in_image->width;
         H = in_image->height;

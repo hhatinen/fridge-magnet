@@ -18,12 +18,13 @@
     #endif
 #elif FM_EGL
     #include <sys/time.h>
-
     #include <GLES2/gl2.h>
     #include <EGL/egl.h>
 #else
     #error You must define either FM_GL or FM_EGL
 #endif
+
+#include <stdio.h>
 
 #define GL(...) __VA_ARGS__; if (glGetError() != GL_NO_ERROR) { printf("GL Error for %s!\n", #__VA_ARGS__ ); }
 
@@ -37,3 +38,4 @@ typedef struct {
 GLuint gl_createProgram(const char * vertex_shader_data, const char * fragment_shader_data);
 int gl_createTexture(const image * image, texture * out_texture);
 
+void gl_drawTexture(const texture * texture, float x, float y, int align, float scale);

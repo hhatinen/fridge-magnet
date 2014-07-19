@@ -10,7 +10,20 @@
 SDL_Window * g_gfx_window;
 SDL_GLContext * g_gfx_gl_context;
 
+int g_gfx_window_width;
+int g_gfx_window_height;
+
+int gfx_getScreenWidth() {
+    return g_gfx_window_width;
+}
+
+int gfx_getScreenHeight() {
+    return g_gfx_window_height;
+}
+
 int gfx_createWindow(int width, int height) {
+    
+    
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER);
 
     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
@@ -19,11 +32,15 @@ int gfx_createWindow(int width, int height) {
     SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
     SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 6);
     SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
+
     
 //    SDL_GL_SetAttribute(SDL_GL_CONTEXT_DEBUG_FLAG, 1);
 //    SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
-    
     g_gfx_window = SDL_CreateWindow("fridge-magnet", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
+
+//    SDL_GL_GetDrawableSize(g_gfx_window, &g_gfx_window_width, &g_gfx_window_height);
+    g_gfx_window_width = width;
+    g_gfx_window_height = height;
     
     g_gfx_gl_context = SDL_GL_CreateContext(g_gfx_window);
     
@@ -31,8 +48,6 @@ int gfx_createWindow(int width, int height) {
     
     gl_setup(width, height);
 
-    printf("grr\n");
-    
     return 0;
 }
 
