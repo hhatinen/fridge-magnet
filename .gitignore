@@ -25,3 +25,7 @@
 .DS_Store
 .Trashes
 *.swp
+xcode/fridge-magnet/DerivedData
+xcode/fridge-magnet/fridge-magnet.xcodeproj/xcuserdata
+xcode/fridge-magnet/fridge-magnet.xcodeproj/project.xcworkspace/xcuserdata
+

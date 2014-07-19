@@ -30,9 +30,9 @@ int main(int argc, char *argv[]) {
     gfx_loadJPG("data/pictures/IMG_1909.jpg", &img);
 
 #if FM_EGL
-    int w = 1440, h = 900;
+    int w = 1360, h = 768;
 #else
-    int w = 1440>>1, h = 900>>1;
+    int w = 1360>>1, h = 768>>1;
 #endif
     
     int err = 0;
@@ -54,7 +54,7 @@ void render(unsigned int dt) {
     glClearColor(0,0,0,1);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 0.5f);
+    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 1.0f);
     
 }
 
