@@ -54,7 +54,7 @@ void render(unsigned int dt) {
     glClearColor(0,0,0,1);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 1.0f);
+    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 2.0f);
     
 }
 
