@@ -10,29 +10,29 @@
 	<string>fridge-magnet</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>68179563-526B-43F2-8951-D3747810D1F2</key>
+		<key>81709B22FF50DECC041DECD95CB58620E57E87CE</key>
 		<string>https://github.com/hhatinen/fridge-magnet.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>xcode/fridge-magnet/fridge-magnet.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>68179563-526B-43F2-8951-D3747810D1F2</key>
+		<key>81709B22FF50DECC041DECD95CB58620E57E87CE</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hhatinen/fridge-magnet.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>68179563-526B-43F2-8951-D3747810D1F2</string>
+	<string>81709B22FF50DECC041DECD95CB58620E57E87CE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>68179563-526B-43F2-8951-D3747810D1F2</string>
+			<string>81709B22FF50DECC041DECD95CB58620E57E87CE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>fridge-magnet</string>
 		</dict>

@@ -15,8 +15,8 @@ attribute vec4 p;\
 varying vec2 v_tex;\
 \
 void main() {\
-    v_tex = vec2(0,1) + vec2(1,-1) * vec2(p.xy) + 0.5;\
-    gl_Position = vec4((p.xy + img_offset * 0.5) * img_scale + img_pos, 0.0, 1.0);\
+    v_tex = vec2(p.x + 0.5, 1.0-(p.y + 0.5));\
+    gl_Position = vec4((p.xy + img_offset * 0.5) * img_scale * 2.0 + img_pos, 0.0, 1.0);\
 }";
 
 const char * drawtex_srcfrag =
@@ -26,7 +26,7 @@ varying vec2 v_tex;\
 \
 void main()	{\
     vec3 txtcol = texture2D(txt, v_tex).rgb;\
-    gl_FragColor = vec4(txtcol.rgb, 1.0);\
+    gl_FragColor = vec4(txtcol, 1.0);\
 }";
 
 GLuint drawtex_shaderprogram;

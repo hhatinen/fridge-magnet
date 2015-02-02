@@ -29,11 +29,7 @@ int main(int argc, char *argv[]) {
     //gfx_createNoiseImage(256, 256, 3, &img);
     gfx_loadJPG("data/pictures/IMG_1909.jpg", &img);
 
-#if FM_EGL
     int w = 1360, h = 768;
-#else
-    int w = 1360>>1, h = 768>>1;
-#endif
     
     int err = 0;
     if((err = gfx_createWindow(w, h))) {
@@ -54,7 +50,7 @@ void render(unsigned int dt) {
     glClearColor(0,0,0,1);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 2.0f);
+    gl_drawTexture(&g_txt, 0, 0, ALIGN_HCVC, 0.5f);
     
 }
 
